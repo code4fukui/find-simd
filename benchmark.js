@@ -12,13 +12,14 @@ const fetchOrLoadCSV = async () => {
   } catch (e) {
     //console.log(e);
     const bin = await (await fetch(url)).bytes();
+    await Deno.mkdir("temp", { recursive: true });
     await Deno.writeFile(fn, bin);
     return await fetchOrLoadCSV();
   }
 };
 
 const csv = await fetchOrLoadCSV();
-//console.log(csv)
+console.log(csv.length)
 
 const texts = csv.map(i => i.title + "\n" + i.tags + "\n" + i.body);
 
