@@ -1,13 +1,12 @@
 # find-simd
 
-Text search using WebAssembly SIMD, but slower than JavaScript.
+WebAssemblyのSIMDを使った高速なテキスト検索ライブラリですが、JavaScriptよりも遅いことがあります。
 
-## Features
 - `i8x16.bitmask`
 - `i8x16.splat`
 - `i8x16.eq`
 
-## Usage
+## 使い方
 
 ```js
 import { FindIndexes } from "https://code4fukui.github.io/find-simd/FindIndexes.js";
@@ -27,7 +26,7 @@ const idx = findidx.findIndexes(key);
 console.log(idx);
 ```
 
-## How to Build
+## ビルド方法
 
 ```js
 wat2wasm find_all.wat -o find_all.wasm
@@ -35,5 +34,6 @@ deno run -A https://code4fukui.github.io/bin2js/bin2js.js find_all.wasm
 ```
 - [bin2js](https://github.com/code4fukui/bin2js)
 
-## License
-MIT
+## ライセンス
+
+MIT License
