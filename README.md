@@ -1,5 +1,7 @@
 # find-simd
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 Text search using WebAssembly SIMD, but slower than JavaScript.
 
 ## Features

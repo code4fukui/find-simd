@@ -2,6 +2,8 @@
 
 WebAssemblyのSIMDを使った高速なテキスト検索ライブラリですが、JavaScriptよりも遅いことがあります。
 
+## 機能
+
 - `i8x16.bitmask`
 - `i8x16.splat`
 - `i8x16.eq`
