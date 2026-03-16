@@ -38,4 +38,4 @@ deno run -A https://code4fukui.github.io/bin2js/bin2js.js find_all.wasm
 - [bin2js](https://github.com/code4fukui/bin2js)
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).
